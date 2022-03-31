@@ -11,10 +11,10 @@ void runExercice(const int &n) {
 		case 3:
 			ex3();
 			break;
-			/*case 4:
-				ex4();
-				break;
-			case 5:
+		case 4:
+			ex4();
+			break;
+			/*case 5:
 				ex5();
 				break;*/
 		default:

@@ -3,6 +3,7 @@
 #include "./exercices/ex1.hpp"
 #include "./exercices/ex2.hpp"
 #include "./exercices/ex3.hpp"
+#include "./exercices/ex4.hpp"
 #include "./utils.hpp"
 
 #ifndef TP1_MENU_HPP
