@@ -14,6 +14,6 @@
  *
  * @return le numéro entré par l'utilisateur.
  */
-int int_input(const std::string &message = "", const int &min = 0, const int &max = INT_MAX);
+int int_input(const std::string &message = "Saisir un nombre : ", const int &min = 0, const int &max = INT_MAX);
 
 #endif //TP1_INPUTS_HPP
