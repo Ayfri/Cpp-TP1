@@ -14,9 +14,9 @@ void runExercice(const int &n) {
 		case 4:
 			ex4();
 			break;
-			/*case 5:
-				ex5();
-				break;*/
+		case 5:
+			ex5();
+			break;
 		default:
 			std::cout << "Choix invalide." << std::endl;
 			break;

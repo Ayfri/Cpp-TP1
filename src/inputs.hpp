@@ -3,6 +3,8 @@
 
 #include <string>
 
+bool bool_input(const std::string &message = "Saisir un booléen : ");
+
 /**
  * Il prend une chaîne et deux entiers comme arguments. Il demande ensuite à l'utilisateur d'entrer un nombre. Si le nombre
  * est compris entre les deux entiers, il renvoie le nombre. Si ce n'est pas le cas, il demande à l'utilisateur de saisir à

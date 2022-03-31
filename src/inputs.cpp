@@ -1,6 +1,13 @@
 #include <iostream>
 #include "inputs.hpp"
 
+bool bool_input(const std::string &message) {
+	std::cout << message << " (y/n): ";
+	char c;
+	std::cin >> c;
+	return std::tolower(c) == 'y';
+}
+
 int int_input(const std::string &message, const int &min, const int &max) {
 	std::string input;
 	int number;
