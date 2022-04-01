@@ -5,9 +5,8 @@ auto is_number_strong(int &number)  {
 	auto sum = 0;
 
 	while (number > 0) {
-		const auto &digit = number % 10;
+		sum += factorial(number % 10);
 		number /= 10;
-		sum += factorial(digit);
 	}
 
 	return sum == originalNumber;

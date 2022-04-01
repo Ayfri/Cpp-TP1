@@ -18,11 +18,9 @@ double get_average_of_notes(const std::array<int, NOTE_LENGTH> &notes) {
 	return sum / double(notes.size());
 }
 
-
 inline int get_max_note(const std::array<int, NOTE_LENGTH> &notes) {
 	return *std::max_element(notes.begin(), notes.end());
 }
-
 
 inline int get_min_note(const std::array<int, NOTE_LENGTH> &notes) {
 	return *std::min_element(notes.begin(), notes.end());
