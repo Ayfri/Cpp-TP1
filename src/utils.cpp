@@ -1,8 +1,8 @@
 #include "utils.hpp"
 
-std::string tolower(std::string &str) {
-	std::transform(str.begin(), str.end(), str.begin(), [](unsigned char c) {
-		return tolower(c);
+std::string tolower(std::string &string) {
+	std::transform(string.begin(), string.end(), string.begin(), [](unsigned char c) {
+		return std::tolower(c);
 	});
-	return str;
+	return string;
 }

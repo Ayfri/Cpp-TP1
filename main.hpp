@@ -2,12 +2,9 @@
 #include <windows.h>
 #include "src/menu.hpp"
 
-#ifndef TP1_MAIN_HPP
-#define TP1_MAIN_HPP
+#pragma once
 
 /**
  * Lancement du programme
  */
 int main();
-
-#endif //TP1_MAIN_HPP

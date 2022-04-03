@@ -1,6 +1,6 @@
 #include "menu.hpp"
 
-void runExercice(const int &n) {
+void run_exercice(const int &n) {
 	switch (n) {
 		case 1:
 			ex1();
@@ -24,7 +24,7 @@ void runExercice(const int &n) {
 }
 
 inline void show_exercices_list() {
-	for (int i = 1; i < 6; ++i) std::cout << "Exercise " << i << "\n";
+	for (auto i = 1U; i < 6U; ++i) std::cout << "Exercise " << i << "\n";
 }
 
 void show_menu() {
@@ -38,14 +38,14 @@ void show_menu() {
 		
 		if (tolower(input) == "exit") break;
 		
-		if (input.length() != 1 || input[0] < '1' || input[0] > '5') {
+		if (input.length() != 1U || input[0U] < '1' || input[0U] > '5') {
 			std::cout << "Numéro d'exercice invalide." << '\n';
 			continue;
 		}
 		
 		const auto &exercise = std::stoi(input);
 		
-		runExercice(exercise);
+		run_exercice(exercise);
 		std::cout << "Tapez ENTRÉE pour continuer." << '\n';
 		getch();
 		

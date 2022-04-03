@@ -3,8 +3,7 @@
 #include <random>
 #include "../inputs.hpp"
 
-#ifndef TP1_EX5_HPP
-#define TP1_EX5_HPP
+#pragma once
 
 /**
  * Jouez une partie du jeu du Nombre Mystère.
@@ -15,5 +14,3 @@
  */
 void play_game(const int &minmax, const int &random_number);
 void ex5();
-
-#endif //TP1_EX5_HPP

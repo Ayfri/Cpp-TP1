@@ -1,8 +1,7 @@
 #include <iostream>
 #include "../inputs.hpp"
 
-#ifndef TP1_EX2_HPP
-#define TP1_EX2_HPP
+#pragma once
 
 void ex2();
 /**
@@ -13,5 +12,3 @@ void ex2();
  * @return La factorielle de n.
  */
 int factorial(const int &n);
-
-#endif //TP1_EX2_HPP

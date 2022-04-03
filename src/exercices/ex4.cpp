@@ -12,10 +12,10 @@ void ex4() {
 }
 
 double get_average_of_notes(const std::array<int, NOTE_LENGTH> &notes) {
-	double sum = 0;
-	for (auto note: notes) sum += note;
+	double sum = .0;
+	for (auto note: notes) sum += static_cast<double>(note);
 	
-	return sum / double(notes.size());
+	return sum / static_cast<double>(notes.size());
 }
 
 inline int get_max_note(const std::array<int, NOTE_LENGTH> &notes) {
@@ -28,8 +28,8 @@ inline int get_min_note(const std::array<int, NOTE_LENGTH> &notes) {
 
 std::array<int, NOTE_LENGTH> get_notes() {
 	std::array<int, NOTE_LENGTH> notes = {};
-	for (int i = 0; i < NOTE_LENGTH; ++i) {
-		notes[i] = int_input("Veuillez entrer la note " + std::to_string(i + 1) + " : ", 0, 20);
+	for (auto i = 0U; i < NOTE_LENGTH; ++i) {
+		notes[i] = int_input("Veuillez entrer la note " + std::to_string(i + 1U) + " : ", 0, 20);
 	}
 	
 	return notes;

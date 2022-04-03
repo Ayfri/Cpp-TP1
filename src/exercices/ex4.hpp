@@ -4,8 +4,7 @@
 #include <string>
 #include <iostream>
 
-#ifndef TP1_EX4_HPP
-#define TP1_EX4_HPP
+#pragma once
 
 #define NOTE_LENGTH 10
 
@@ -39,5 +38,3 @@ inline int get_min_note(const std::array<int, NOTE_LENGTH> &notes);
 std::array<int, NOTE_LENGTH> get_notes();
 
 void ex4();
-
-#endif //TP1_EX4_HPP

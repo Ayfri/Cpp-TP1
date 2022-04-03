@@ -5,8 +5,7 @@
 #include <iterator>
 #include "../inputs.hpp"
 
-#ifndef TP1_EX1_HPP
-#define TP1_EX1_HPP
+#pragma once
 
 /**
  * Retourne toutes les valeurs impaires de 1 à n - 1.
@@ -18,5 +17,3 @@
 std::vector<int> get_even_numbers(const int &n);
 
 void ex1();
-
-#endif //TP1_EX1_HPP

@@ -7,15 +7,14 @@
 #include "./exercices/ex5.hpp"
 #include "./utils.hpp"
 
-#ifndef TP1_MENU_HPP
-#define TP1_MENU_HPP
+#pragma once
 
 /**
  * Prend un entier en entrée et exécute l'exercice correspondant.
  *
  * @param n le numéro de l'exercice à exécuter.
  */
-void runExercice(const int &n);
+void run_exercice(const int &n);
 
 /**
  * Affiche la liste des exercices.
@@ -27,5 +26,3 @@ inline void show_exercices_list();
  * L'utilisateur peut quitter le programme en écrivant "exit".
  */
 void show_menu();
-
-#endif //TP1_MENU_HPP

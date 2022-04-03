@@ -1,19 +1,19 @@
 #include "ex3.hpp"
 
-auto is_number_strong(int &number)  {
-	const auto &originalNumber = number;
+auto is_number_strong(const int &number) {
+	auto operation_number = number;
 	auto sum = 0;
-
-	while (number > 0) {
-		sum += factorial(number % 10);
-		number /= 10;
+	
+	while (operation_number > 0) {
+		sum += factorial(operation_number % 10);
+		operation_number /= 10;
 	}
-
-	return sum == originalNumber;
+	
+	return sum == number;
 }
 
 void ex3() {
-	auto number = int_input("Saisir un nombre : ");
+	const auto number = int_input("Saisir un nombre : ");
 	
-	std::cout << number << (is_number_strong(number) ? " est " : " n'est pas ") << "un nombre fort."  << '\n';
+	std::cout << number << (is_number_strong(number) ? " est " : " n'est pas ") << "un nombre fort." << '\n';
 }
