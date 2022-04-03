@@ -9,14 +9,12 @@ std::vector<int> get_even_numbers(const int &n) {
 }
 
 void ex1() {
-	std::cout << "Saisir un nombre n : ";
 	auto n = int_input();
 	std::vector<int> numbers = get_even_numbers(n);
-	std::cout <<"Les nombres pairs de 1 à " << n << " sont : " << "\n";
+	std::cout << "Les nombres pairs de 1 à " << n << " sont : " << "\n";
 	std::copy(numbers.begin(), numbers.end(), std::ostream_iterator<int>(std::cout, " "));
 	std::cout << "\n";
 	
-	std::cout << "Saisir un nombre : ";
 	n = int_input();
 	numbers = get_even_numbers(n);
 	const auto &result = std::accumulate(numbers.begin(), numbers.end(), 0);

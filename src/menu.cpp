@@ -24,10 +24,18 @@ void run_exercice(const int &n) {
 }
 
 inline void show_exercices_list() {
+	print_line("Exercices");
 	for (auto i = 1U; i < 6U; ++i) std::cout << "Exercise " << i << "\n";
 }
 
+inline void print_line(const std::string &message, const int unsigned &length) {
+	// print the message centered in the line via "="
+	const auto &size = (length / 2U - message.length() / 2U) - 2U;
+	std::cout << std::string(size, '=') << " " << message << " " << std::string(size, '=') << '\n';
+}
+
 void show_menu() {
+	std::cout << "Bienvenue dans le TP 1 !" << '\n';
 	show_exercices_list();
 	
 	do {
@@ -44,7 +52,7 @@ void show_menu() {
 		}
 		
 		const auto &exercise = std::stoi(input);
-		
+		print_line("Exercice " + input);
 		run_exercice(exercise);
 		std::cout << "Tapez ENTRÉE pour continuer." << '\n';
 		getch();

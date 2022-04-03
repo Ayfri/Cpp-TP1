@@ -13,7 +13,6 @@ auto is_number_strong(const int &number) {
 }
 
 void ex3() {
-	const auto number = int_input("Saisir un nombre : ");
-	
+	const auto number = int_input();
 	std::cout << number << (is_number_strong(number) ? " est " : " n'est pas ") << "un nombre fort." << '\n';
 }

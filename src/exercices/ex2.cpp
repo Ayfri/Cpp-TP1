@@ -7,7 +7,6 @@ int factorial(const int &n) {
 }
 
 void ex2() {
-	std::cout << "Saisir un nombre : ";
-	auto n = int_input();
+	const auto n = int_input();
 	std::cout << "Factoriel de " << n << " = " << factorial(n) << "\n";
 }

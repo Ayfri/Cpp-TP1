@@ -1,16 +1,5 @@
 #include "ex4.hpp"
 
-void ex4() {
-	auto notes = get_notes();
-	auto average = get_average_of_notes(notes);
-	auto max = get_max_note(notes);
-	auto min = get_min_note(notes);
-	
-	std::cout << "La moyenne des notes est : " << average << '\n';
-	std::cout << "La note minimale est : " << min << '\n';
-	std::cout << "La note maximale est : " << max << '\n';
-}
-
 double get_average_of_notes(const std::array<int, NOTE_LENGTH> &notes) {
 	double sum = .0;
 	for (auto note: notes) sum += static_cast<double>(note);
@@ -33,4 +22,15 @@ std::array<int, NOTE_LENGTH> get_notes() {
 	}
 	
 	return notes;
+}
+
+void ex4() {
+	auto notes = get_notes();
+	auto average = get_average_of_notes(notes);
+	auto max = get_max_note(notes);
+	auto min = get_min_note(notes);
+	
+	std::cout << "La moyenne des notes est : " << average << '\n';
+	std::cout << "La note minimale est : " << min << '\n';
+	std::cout << "La note maximale est : " << max << '\n';
 }

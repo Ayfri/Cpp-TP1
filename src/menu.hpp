@@ -21,6 +21,8 @@ void run_exercice(const int &n);
  */
 inline void show_exercices_list();
 
+inline void print_line(const std::string &message, const int unsigned &length = 40U);
+
 /**
  * Affiche le menu, demande à l'utilisateur de choisir un exercice, exécute l'exercice, affiche à nouveau le menu après.
  * L'utilisateur peut quitter le programme en écrivant "exit".
